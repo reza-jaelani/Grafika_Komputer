@@ -9,17 +9,28 @@ void display1(void) {
     glPointSize(5.0f);
     glBegin(GL_POINTS);
         glVertex2f(-0.5,0.5);
-        glVertex2f(-0.5,0.0);
-        glVertex2f(-0.5,-0.5);
-
-        glVertex2f(0.0,0.5);
-        glVertex2f(0.0,0.0);
-        glVertex2f(0.0,-0.5);
-
-        glVertex2f(0.5,0.5);
-        glVertex2f(0.5,0.0);
         glVertex2f(0.5,-0.5);
     glEnd();
+
+    glColor3ub(0,212,0);
+    glBegin(GL_POINTS);
+        glVertex2f(0.0,0.5);
+        glVertex2f(-0.5,0.0);
+        glVertex2f(0.5,0.0);
+        glVertex2f(0.0,-0.5);
+    glEnd();
+
+    glColor3ub(0,0,212);
+    glBegin(GL_POINTS);
+        glVertex2f(0.5,0.5);
+        glVertex2f(-0.5,-0.5);
+    glEnd();
+
+    glColor3ub(212,0,150);
+    glBegin(GL_POINTS);
+        glVertex2f(0.0,0.0);
+    glEnd();
+
     glFlush();
 
 }
